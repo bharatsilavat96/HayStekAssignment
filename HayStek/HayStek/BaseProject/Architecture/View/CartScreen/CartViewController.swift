@@ -52,6 +52,8 @@ extension CartViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CartItemTableViewCell", for: indexPath) as? CartItemTableViewCell
+        cell?.delegate = self
+        cell?.index = indexPath.row
         return cell ?? UITableViewCell()
     }
     
@@ -79,4 +81,12 @@ extension CartViewController: DelegateCustomNavigationBar {
     }
 }
 
-
+extension CartViewController: CartItemTableViewCellDelegate {
+    func addItem(atIndex: Int) {
+        <#code#>
+    }
+    
+    func removeItem(atIndex: Int) {
+        <#code#>
+    }
+}

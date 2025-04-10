@@ -222,7 +222,6 @@
 			children = (
 				36C2517B2DA69986009A26F0 /* Model */,
 				36C2517D2DA69995009A26F0 /* View */,
-				36C2517E2DA6999C009A26F0 /* ViewModel */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -248,13 +247,6 @@
 				36C251B62DA6F7C3009A26F0 /* CustomHeaderView.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		36C2517E2DA6999C009A26F0 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		36C251952DA6A498009A26F0 /* AssetManager */ = {

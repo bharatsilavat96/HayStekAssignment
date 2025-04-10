@@ -79,7 +79,7 @@
                                 <constraint firstAttribute="width" constant="40" id="HdH-D1-FJJ"/>
                                 <constraint firstAttribute="height" constant="35" id="L0u-VU-949"/>
                             </constraints>
-                            <state key="normal" image="ic_Hamburger"/>
+                            <state key="normal" image="gearshape" catalog="system"/>
                             <connections>
                                 <action selector="leftBackhomeButtonAction:" destination="oVd-VX-Bqq" eventType="touchUpInside" id="hcv-ih-GmD"/>
                             </connections>
@@ -122,6 +122,7 @@
         </view>
     </objects>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="ic_Hamburger" width="24.333333969116211" height="24"/>
     </resources>
 </document>

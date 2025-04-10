@@ -83,10 +83,10 @@ extension CartViewController: DelegateCustomNavigationBar {
 
 extension CartViewController: CartItemTableViewCellDelegate {
     func addItem(atIndex: Int) {
-        <#code#>
+        print("")
     }
     
     func removeItem(atIndex: Int) {
-        <#code#>
+        print("")
     }
 }

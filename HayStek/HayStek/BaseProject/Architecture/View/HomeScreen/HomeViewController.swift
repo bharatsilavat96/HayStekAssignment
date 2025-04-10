@@ -64,9 +64,12 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = CustomHeaderView()
-        
-        return headerView
+        if section == 0 {
+            return FlashSaleHeaderView(title: "Categories", showTimer: false)
+        } else if section == 1 {
+            return FlashSaleHeaderView(title: "Flash Sale", showTimer: true)
+        }
+        return nil
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -111,8 +114,9 @@ extension HomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 50
     }
+    
 }
 
 

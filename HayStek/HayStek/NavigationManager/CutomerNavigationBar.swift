@@ -94,7 +94,21 @@ class CutomerNavigationBar: UIView {
         switch screenName {
 
         case .HomeViewController:
-           
+            navigationBar.stackCenterLabel.isHidden = false
+            navigationBar.stackRightButtons.isHidden = false
+            navigationBar.buttonHomeOrBack.isHidden = false
+            navigationBar.firstRightButton.isHidden = false
+            
+            
+            navigationBar.centerTitleLabel.textAlignment = .center
+            navigationBar.centerSubTitleLabel.textAlignment = .center
+            navigationBar.centerTitleLabel.text = "Delivery Address"
+            navigationBar.centerSubTitleLabel.text = "92 High Street London"
+            navigationBar.centerTitleLabel.font = Fonts.gilroyRegular14Font
+            navigationBar.centerSubTitleLabel.font = Fonts.gilroyBold16Font
+            navigationBar.centerTitleLabel.textColor = .systemGray3
+            navigationBar.centerSubTitleLabel.textColor = .black
+            navigationBar.buttonHomeOrBack.setImage(UIImage(systemName: "gearshape"), for: .normal)
             navigationBar.firstRightButton.setImage(UIImage(systemName: "bell.badge.fill"), for: .normal)
             navigationBar.secondRightButton.setImage(UIImage(systemName: "gearshape.fill"), for: .normal)
 
